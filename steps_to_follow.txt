@@ -1,0 +1,19 @@
+Idea : 
+converting the docx file to zip file (common archieve) so that data can be accessed in the xml form which is available in word/document.xml in zip file. 
+Now except document.xml we copy every other file in zip to a zip file, modify the document.xml file as per our needs and replace it in it's correct location.
+
+Now for charts, the data for charts would be available in word/charts/chart1.xml. Styles for charts would be available in word/charts/style1.xml. Colors data would be available in word/charts/colors1.xml. Graphic data for charts would also be there in document.xml file too.
+
+steps to run :
+1. create a word file with name : input.docx, if specified any other any name,type the path for it in global variable (pathToFile) provided in index.js file
+2. run the index.js file using node index.js after installing required packages using npm install
+3. check the generated output.docx file, or any other ouput file if specified explicitly.
+
+Also please check the charts_try_index.js which contains some implementation for charts, but for some reason it's not showing up in word document.
+
+Some Limitations to remember : 
+1. Input Document file should be given.
+2. This script doesn't work on empty document file.
+3. Also table would be appended in the next line after the last word/sentence/paragraph written in input docx.
+
+
